@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+    <!--header & navbar-->
+
+    <div class="header-wrapper">
+        <header>
+
+            <nav>
+
+                <ul class="main-menu show-desktop hide-mobile">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit"></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Main One</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Page Two</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Page Three</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Our Work</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="right-menu">
+                    <div class="language hide-mobile">
+                        EN | GR
+                    </div>
+
+                    <div class="search">
+                        <img src="images/search.svg" alt="search">
+                    </div>
+
+                    <a href="#" class="open">
+                        <img src="images/ham.svg" alt="toggle" class="ham" id="ham">
+                    </a>
+                </div>
+
+            </nav>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+            </div>
+
+        </header>
+    </div>
+
+    <!--section instead slider-->
+    <!--slider works only on the desktop view, has to be implemented on the phone view-->
+
+    <section class="hero">
+        <div class="hero-container">
+
+        </div>
+    </section>
+
+    <!-- 
+        <div class="slidershow">
+
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+
+                <div class="slide s1">
+                    <img src="images/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/3.png" alt="">
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+            </div>
+
+        </div>
+     -->
+
+
+    <div class="content-container">
+
+        <!--row 1, girl-image & paragraph-->
+
+        <div class="container1">
+            <div class="content11">
+                <img class="pop_girl" src="images/pop.png" alt="pop">
+            </div>
+
+            <div class="content12">
+                <div class="pop_paragraphs">
+                    <p class="p1">Since the 1500s</p>
+                    <p class="p2">The standard</p>
+                    <p class="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--row 2, pillow-image & paragraph-->
+
+        <div class="container2">
+            <div class="content21">
+                <img src="images/pop-art-love-cushion.png" alt="pop-art-love-cushion">
+            </div>
+
+            <div class="content22">
+                <div class="pop_paragraphs_2">
+                    <p class="p1">Since the 1500s</p>
+                    <p class="p2">The standard</p>
+                    <p class="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <button type="button">Search</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--row 3, map & contact form-->
+
+    <div class="container3">
+
+        <div class="contact">
+            <form action="" method="post" onsubmit="return isChecked();">
+                <div class="row">
+                    <div class="column">
+                        <input type="text" placeholder="Full Name *" name="name" required>
+                    </div>
+                    <div class="column">
+                        <input type="text" placeholder="E-mail *" name="email" required>
+                    </div>
+                    <div class="column">
+                        <input type="text" placeholder="Phone*" name="phone" required>
+                    </div>
+                    <div class="column">
+                        <textarea placeholder="Message" name="message"></textarea>
+                    </div>
+
+                    <div class="column">
+                        <p>Please select at least one of the following:</p>
+                        <input type="checkbox" name="option" value="Option 1" id="option1" />Option 1<br />
+                        <input type="checkbox" name="option" value="Option 2" id="option1" />Option 2<br />
+                    </div>
+
+                    <div class="column">
+                        <input type="submit" value="Submit">
+                    </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="map">
+
+        <img src="images/map.png" alt="map">
+        <div id="circle"></div>
+    </div>
+    </div>
+
+    <!--footer-->
+
+    <footer>
+        <ul class="footer">
+            <li>© The standard Copywrite 2020</li>
+            <li class="hide-mobile">Cookies. | Privacy.</li>
+
+            <li class="footer_logo">
+                <a href="index.html">
+                    <img src="images/logo_small.svg" alt="footer_logo">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!--green circle on map-->
+
+    <script>
+        $(function () {
+            $('#circle').on('mouseover', function () {
+                $(this).stop().animate({
+                    'width': 200,
+                    'height': 200
+                }, 500);
+            });
+
+            $('#circle').on('mouseout', function () {
+                $(this).stop().animate({
+                    'width': 32,
+                    'height': 32
+                }, 500);
+            });
+        })
+    </script>
+
+    <!--checkboxes-->
+
+    <script>
+        function isChecked() {
+            var Option1 = document.getElementById('option1').checked;
+            var Option2 = document.getElementById('option2').checked;
+
+            if (Option1 == false && Option2 == false && ) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

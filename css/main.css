@@ -1,0 +1,478 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+/*header & navbar*/
+
+.header-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 56px;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.hide-mobile {
+    visibility: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 24px;
+    width: 40px;
+    height: 40px;  
+}
+
+.logo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.right-menu {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 26px;
+    top: 20px;
+}
+
+.search svg {
+    top: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.ham {
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    padding-left: 32px;
+}
+
+/*instead slider*/
+
+.hero {
+    margin-top: -19px;
+    background: rgb(66, 54, 54);
+    width: 100%;
+    height: 412px;
+}
+
+/*row 1, girl-image & paragraph*/
+
+.content11 > img{
+    padding: 32px 24px 0 24px;
+    width: 312px;
+    height: 100%;
+}
+
+.pop_paragraphs {
+    padding: 33px 24px 0 25px;
+    width: 312px;
+    height: 100%;
+}
+
+.p1 {
+    color: #CFCFCF;
+    font-size: 14px;
+}
+.p2 {
+    font-size: 28px;
+}
+.p3 {
+    text-align: left;
+    font-size: 16px;
+}
+
+/*row 2, pillow-image & paragraph*/
+
+.content21 > img{
+    padding: 37px 24px 0 24px;
+    width: 312px;
+    height: 100%;
+}
+
+
+.pop_paragraphs_2 {
+    padding: 33px 24px 0 25px;
+    width: 312px;
+}
+
+button {
+    margin-top: 33px;
+    margin-left: 24px;
+    margin-bottom: 44px;
+    width: 152px;
+    height: 48px;
+    color: #FFFFFF;font-size: 18px;
+    background: #4B00FF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000066;
+    border-radius: 42px;
+}
+
+.contact {
+    height: 412px;
+}
+
+/* row 3, map & contact form */
+
+.map {
+    position: relative;
+    height: 296px;
+}
+
+.map img {
+    position: absolute;
+    height: 296px;
+    width: 100%;
+    background-size: cover
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    height: 40px;
+    bottom: 0;
+}
+
+.footer_logo {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 24px;
+    top: 12px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li:nth-child(-n+2) {
+    color: #FFFFFF;   
+    opacity: 1;
+}
+
+/* ----------------------media query for screens above 361px ---------------------------*/
+
+@media (min-width: 361px) {
+    
+    /*header & navbar*/
+
+    header {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 64px;
+        background: #000000 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 26px;
+        padding-left: 72px;
+        width: 72px;
+        height: 72px;
+        z-index: 23;
+    }
+
+    .hide-mobile {
+        visibility: visible;
+    }
+
+    .exit-btn {
+        display: none;
+    }
+
+    .ham {
+        visibility: hidden;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+        height: 64px;
+    }
+    
+    .main-menu {
+        margin-left: 252px;
+        padding: 24px 368px 16px;
+    }
+
+    nav ul {
+        top: 24px;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    ul li {
+        margin-right: 18px;      
+    }
+    
+    ul li a {
+        width: auto;
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+    
+    .right-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .language {
+        color: white;
+        top: 19px;
+        width: 97px;
+        height: 27px;
+    }
+    
+    .search svg {
+        top: 20px;
+        width: 24px;
+        height: 24px;
+        right: 77px;
+    }
+
+    /*instead slider*/
+
+    .hero {
+        margin-top: -19px;
+        background: rgb(66, 54, 54);
+        width: 100%;
+        height: 650px;
+    }
+
+    /*slider works only on the desktop view, has to be implemented on the phone view*/
+
+    /* 
+    .slidershow {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .navigation{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .bar{
+        width: 16px;
+        height: 16px;
+        background: #9F9F9F;
+        border-radius: 100%;
+        margin: 6px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .bar:hover{
+        background: #fff;
+    }
+      
+    input[name="r"]{
+          position: absolute;
+          visibility: hidden;
+    }
+      
+    .slides{
+        width: 500%;
+        height: 100%;
+        display: flex;
+    }
+      
+    .slide{
+        width: 20%;
+        transition: 0.6s;
+    }
+    .slide img{
+        width: 100%;
+        height: 100%;
+    }
+      
+    #r1:checked ~ .s1{
+        margin-left: 0;
+    }
+
+    #r2:checked ~ .s1{
+        margin-left: -20%;
+    }
+
+    #r3:checked ~ .s1{
+        margin-left: -40%;
+    }
+    */
+
+    /*container for row 1 & 2*/
+
+    .content-container {
+        margin: 0 252px;
+        height: 800px;
+    }
+
+    /*row 1, girl-image & paragraph*/
+
+    .container1 {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: 350px;
+        grid-template-areas: 
+        "content11 content12"
+    }
+    
+    .content11 {
+        position: absolute;
+        grid-area: content11;
+        margin-left: 130px;
+        margin-top: 100px;
+        overflow: hidden;
+    }
+
+    .content11 > img {
+        transition: transform .2s ease-in-out;
+    }
+
+    .content11 > img:hover {
+        transform: translate3d(0px, -150px, 0px);
+    }
+
+    /*row 2, pillow-image & paragraph*/
+
+    .content12 {
+        grid-area: content12;
+    }
+       
+    .container2 {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "content22 content21"       
+    }
+    
+    .content21 {
+        position: absolute;
+        grid-area: content21;
+    }
+
+    .content21 > img {
+        height: 100%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: transform .3s ease-out;
+    }
+
+    .content21 > img:hover {
+        -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+    }
+    
+    .content22 {
+        grid-area: content22;
+        margin-left: 130px;
+    }
+     
+    /* row 3, map & contact form */
+
+    .container3 {
+        display: grid;
+        height: 556px;
+        grid-template-columns: 4fr 6fr;
+        grid-template-areas: 
+        "map contact"
+    }
+    
+    .map {
+        left: 0;
+        grid-area: map;
+    }
+
+    .map > img {
+        position: relative;
+        height: 556px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #circle {
+        display:block;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        border-radius: 100px;
+        top: 50%;
+        left: 50%;
+        background: #B4FF00;
+    }
+    
+    .contact {
+        
+    }
+    
+    /* footer */
+
+    footer {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #000;
+        height: 48px;
+    }
+    
+    .footer_logo {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        right: 0;
+    }
+    
+    footer ul li:nth-child(-n+2) {
+        color: #FFFFFF;   
+        opacity: 1;
+    }
+    
+}
